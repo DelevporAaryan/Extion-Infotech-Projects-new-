@@ -1,25 +1,230 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interractive Quiz App - by Aaryan Gautam</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>ONLINE BOOKSTORE</title>
 </head>
-<body>
-    <div class="alert">Alert</div> 
-    <div class="btn startBtn">Start</div>
-    <div class="container">
-        <h1>Let's play a Quiz Game</h1>
-        <div class="question"></div>
-        <div class="choices"></div>
-        <button class="btn nextBtn">Next</button>
-        <div class="scoreCard"></div>
-        <div class="timer"></div>
-        <button class="btn exitBtn">X</button>
-        <div class="result" ></div>
 
+<body>
+    <nav id="nav">
+        <div class="navTop">
+            <div class="navItem">
+                <img src="https://urcoeditora.com/wp-content/uploads/2015/01/logobookstore.png" alt=""
+                    style="height: 47;">
+            </div>
+            <div class="navItem">
+                <div class="search">
+                    <input type="text" placeholder="search..." class="searchInput">
+                    <img src="https://th.bing.com/th/id/OIP._RTO9yp1xH5aQA0vS7fpHAHaHW?pid=ImgDet&rs=1" width="20"
+                        height="25" align-items="center" class="searchIcon" alt="">
+                </div>
+            </div>
+            <div class="navItem">
+                <span class="limitedoffer">Limited 50% OFF! For new user only.</span>
+            </div>
+        </div>
+        <div class="navBottom">
+            <ul style="display: flex;">
+                <li class="menuItem" style="display: block;">PHYSICS</li>
+                <li class="menuItem" style="display: block;">MATHEMATICS</li>
+                <li class="menuItem" style="display: block;">CHEMISTRY</li>
+                <li class="menuItem" style="display: block;">BIOLOGY</li>
+                <li class="menuItem" style="display: block;">LITRATURE</li>
+            </ul>
+        </div>
+    </nav>
+    <div class="slider">
+        <div class="sliderWrapper">
+            <div class="sliderItem">
+                <img id="img1" src="https://classicaleducationbooks.ca/wp-content/uploads/2020/05/Intro-Physics-3D_400x.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="silderTitle">PHYSICS<br> NEW</br> EDITION</h1>
+                <h2 class="sliderPrice">$14</h2>
+                <a href="#product"><button type="button" class="buyButton">BUY
+                        NOW!</button></a>
+            </div>
+            <div class="sliderItem">
+                <img id="img2" src="https://www.christianperspective.net/wp-content/uploads/principles-of-mathematics-book-2-1-390x365.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="silderTitle">MATHEMATICS<br> NEW<br> EDITION</h1>
+                <h2 class="sliderPrice">$39</h2>
+                <a href="#product"><button class="buyButton">BUY NOW!</button></a>
+            </div>
+            <div class="sliderItem">
+                <img id="img3" src="https://cathyduffyreviews.com/images/chemistry-master-books.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="silderTitle">CHEMISTRY<br> NEWN<br> EDITION</h1>
+                <h2 class="sliderPrice">$19</h2>
+                <a href="#product"><button class="buyButton">BUY NOW!</button></a>
+            </div>
+            <div class="sliderItem">
+                <img id="img4" src="https://biotechtimes.org/wp-content/uploads/2019/07/Developmental-Biology.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="silderTitle">BIOLOGY<br> NEW<br> EDITION</h1>
+                <h2 class="sliderPrice">$29</h2>
+                <a href="#product"><button class="buyButton">BUY NOW!</button></a>
+            </div>
+            <div class="sliderItem">
+                <img id="img5" src="https://i.pinimg.com/originals/ea/1f/55/ea1f5550e4a0c0378d8ec30808c235b9.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="silderTitle">LITRATURE<br> NEW<br> EDITION</h1>
+                <h2 class="sliderPrice">$9</h2>
+                <a href="#product"><button class="buyButton">BUY NOW!</button></a>
+            </div>
+        </div>
     </div>
-    <script src="app.js"></script>
+    <div class="features">
+        <div class="feature">
+            <img src="https://pngimg.com/uploads/free_shipping/free_shipping_PNG91.png" alt="" class="featureIcon">
+            <span class="featureTitle">FREE SHIPPING</span>
+            <span class="featureDesc">Free worldwide shipping on all order.</span>
+        </div>
+        <div class="feature">
+            <img src="https://cdn.shopify.com/s/files/1/0550/8700/5888/files/return30.png" alt="" class="featureIcon">
+            <span class="featureTitle">30 DAYS RETURN</span>
+            <span class="featureDesc">No question return and easy to refund in 14 days.</span>
+        </div>
+        <div class="feature">
+            <img src="https://th.bing.com/th/id/OIP.LNu83I4HhhN75FuJKtXU1AHaHa?pid=ImgDet&rs=1" alt=""
+                class="featureIcon">
+            <span class="featureTitle">GIFT CARD</span>
+            <span class="featureDesc">Buy gift cards and use coupon code easily.</span>
+        </div>
+        <div class="feature">
+            <img src="https://insurance.archgroup.com/wp-content/uploads/sites/2/icon-Email-Green.png" alt=""
+                class="featureIcon">
+            <span class="featureTitle">CONTACT US</span>
+            <span class="featureDesc">Keep in touch via email and support system.</span>
+        </div>
+    </div>
+    <div class="product" id="product">
+        <img src="https://classicaleducationbooks.ca/wp-content/uploads/2020/05/Intro-Physics-3D_400x.png" alt="" class="productImg">
+        <div class="productDetails">
+            <h1 class="productTitle">PHYSICS</h1>
+            <h2 class="productPrice">$14</h2>
+            <p class="productDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, sit nesciunt
+                obcaecati culpa neque quia eligendi sapiente!</p>
+        </div>
+        <button class="productButton">BUY NOW!</button>
+        <div class="payment">
+            <h1 class="payTitle">Personal Information</h1>
+            <label for="">Name and Surname</label>
+            <input type="text" placeholder="Your name" class="payInput">
+            <label for="">Phone Number</label>
+            <input type="text" placeholder="+91 XXX-XXX-XXXX" class="payInput">
+            <label for="">Address</label>
+            <input type="text" placeholder="City or Palce where you live" class="payInput">
+            <h1 class="payTitle">Card Information</h1>
+            <div class="cardIIcon">
+                <img src="https://logodownload.org/wp-content/uploads/2016/10/visa-logo-14.png" class="cardIIcon"
+                    width="40" alt="">
+                <img src="https://th.bing.com/th/id/OIP.FtvETY1E_WFX9yKpZ057BwAAAA?pid=ImgDet&rs=1" class="cardIIcon"
+                    width="40" alt="">
+            </div>
+            <input type="password" class="payInput" placeholder="Card Number">
+            <div class="cardInfo">
+                <input type="text" class="payInput sm" placeholder="MM">
+                <input type="text" class="payInput sm" placeholder="YYYY">
+                <input type="text" class="payInput sm" placeholder="CVV">
+            </div>
+            <button class="payButton">Checkout</button>
+            <span class="close">X</span>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="galleryItem">
+            <h1 class="galleryTitle">More publishers</h1>
+            <img src="https://www.amakella.com/wp-content/uploads/2020/04/Types-of-Publishers-410x1024.png"
+                alt="" class="galleryImg">
+        </div>
+        <div class="galleryItem">
+            <img src="https://writingtipsoasis.com/wp-content/uploads/2019/08/publishers-of-maths-books.png"
+                alt="" class="galleryImg">
+            <h1 class="galleryTitle">Get latest and best author books here.</h1>
+        </div>
+        <div class="galleryItem">
+            <h1 class="galleryTitle">Check it!</h1>
+            <img src="https://i.pinimg.com/736x/65/d8/e8/65d8e87e5998da1fec99383a3dc34dbf.jpg"
+                alt="" class="galleryImg">
+        </div>
+    </div>
+    <div class="newSeason">
+        <div class="nsItem">
+            <img src="https://th.bing.com/th/id/OIP.rOYuA47l8ljbueDRpvs4ewAAAA?pid=ImgDet&rs=1"
+                alt="" class="nsImg">
+        </div>
+        <div class="nsItem">
+            <h3 class="nsTitleSm">FROM BEST PUBLICATION</h3>
+            <h1 class="nsTitle">Latest Edition</h1>
+            <h1 class="nsTitle">New Published</h1>
+            <a href="#nav">
+                <button class="nsButton">MAKE THE WAY TO YOUR SUCCESS</button>
+            </a>
+        </div>
+        <div class="nsItem">
+            <img src="https://authority.pub/wp-content/uploads/2020/12/Copy-of-AP-EOP-TP-1.png"
+                alt="" class="nsImg">
+        </div>
+    </div>
+    <footer>
+        <div class="footerLeft">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">About Us</h1>
+                <ul class="fList">
+                    <li class="fListItem">Company</li>
+                    <li class="fListItem">Contact</li>
+                    <li class="fListItem">Careers</li>
+                    <li class="fListItem">Affiliates</li>
+                    <li class="fListItem">Stores</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Useful Links</h1>
+                <ul class="fList">
+                    <li class="fListItem">Support</li>
+                    <li class="fListItem">Refund</li>
+                    <li class="fListItem">FAQ</li>
+                    <li class="fListItem">Feedback</li>
+                    <li class="fListItem">Stories</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Stream</h1>
+                <ul class="fList">
+                    <li class="fListItem">Physics</li>
+                    <li class="fListItem">Mathematics</li>
+                    <li class="fListItem">Chemistry</li>
+                    <li class="fListItem">Biology</li>
+                    <li class="fListItem">Litrature</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerRight">
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+                <div class="fMail">
+                    <input type="text" placeholder="your@email.com" class="fInput">
+                    <button class="fButton">Join!</button>
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Follow Us</h1>
+                <div class="fIcons">
+                    <img src="https://th.bing.com/th/id/R.9d13eaaf6566b8bdf715bd38c110aec0?rik=rY2INEiHKMVz2w&riu=http%3a%2f%2f3.bp.blogspot.com%2f-KNqO9JuXUN8%2fTi2b1LHRquI%2fAAAAAAAAAIU%2fL6k8Wlzxj9k%2fs1600%2flogo_facebook.png&ehk=ziMr2C3oUEw31MWuloKmoKqzMBzkqgUnFMR%2bsHqWeHM%3d&risl=&pid=ImgRaw&r=0" alt="" class="fIcon">
+                    <img src="https://www.seeklogo.net/wp-content/uploads/2016/11/twitter-icon-circle-blue-logo-preview-200x200.png" alt="" class="fIcon">
+                    <img src="https://www.pngmart.com/files/13/Instagram-Logo-PNG-Image-1.png" alt="" class="fIcon">
+                    <img src="https://cdn.freebiesupply.com/images/large/2x/whatsapp-logo-green.png" alt="" class="fIcon">
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <span class="copyright">@Aaryan. All rights reserved. 2022.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="./app.js"></script>
 </body>
+
 </html>
